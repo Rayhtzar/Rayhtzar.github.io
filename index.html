@@ -5,83 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
-  <body>
-    <header>
-      <h1>Mi Portafolio</h1>
-      <nav>
+  <body class="light-theme">
+    <section class="figure">
+      <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+        <button id="theme-toggle">Cambiar a modo oscuro</button>
+      </header>
+  
+      <section id="hero">
+        <div class="hero-content">
+          <h1>Bienvenido a Mi Portafolio</h1>
+          <p>Desarrollador apasionado por la tecnología y el diseño web.</p>
+          <a href="#contact" class="cta">Contáctame</a>
+        </div>
+      </section>
+  
+      <section id="about">
+        <h2>Sobre mí</h2>
+        <p>
+          ¡Hola! Soy [Tu Nombre], un desarrollador apasionado por la tecnología y
+          el diseño web. Me especializo en crear aplicaciones web efectivas y
+          fáciles de usar. Bienvenido a mi portafolio donde podrás conocer algunos
+          de mis proyectos y habilidades.
+        </p>
+      </section>
+  
+      <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects">
+          <div class="project">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto, las tecnologías usadas y el propósito del mismo.</p>
+            <a href="#">Ver más</a>
+          </div>
+          <div class="project">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto, las tecnologías usadas y el propósito del mismo.</p>
+            <a href="#">Ver más</a>
+          </div>
+        </div>
+      </section>
+  
+      <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills">
+          <div class="skill">
+            <i class="fab fa-html5"></i>
+            <h3>HTML & CSS</h3>
+            <p>Experiencia en creación de interfaces responsivas y modernas usando HTML y CSS.</p>
+          </div>
+          <div class="skill">
+            <i class="fab fa-js-square"></i>
+            <h3>JavaScript</h3>
+            <p>Conocimiento en desarrollo de funcionalidades interactivas y manejo de datos con JavaScript.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section id="contact">
+        <h2>Contacto</h2>
+        <p>
+          ¿Quieres trabajar juntos? Puedes contactarme a través de mis redes
+          sociales o enviarme un correo electrónico a
+          <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a>.
+        </p>
+        <form action="https://formsubmit.co/tu-correo" method="POST">
+          <input type="text" name="name" placeholder="Tu nombre" required />
+          <input type="email" name="email" placeholder="Tu correo" required />
+          <textarea name="message" placeholder="Tu mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+  
+      <footer>
+        <p>&copy; 2024 Mi Portafolio</p>
         <ul>
-          <li><a href="#about">Sobre mí</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com" target="_blank">GitHub</a></li>
+          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
         </ul>
-      </nav>
-    </header>
-
-    <section id="about">
-      <h2>Sobre mí</h2>
-      <p>
-        ¡Hola! Soy [Tu Nombre], un desarrollador apasionado por la tecnología y
-        el diseño web. Me especializo en crear aplicaciones web efectivas y
-        fáciles de usar. Bienvenido a mi portafolio donde podrás conocer algunos
-        de mis proyectos y habilidades.
-      </p>
+      </footer>
+  
     </section>
-
-    <section id="projects">
-      <h2>Proyectos</h2>
-      <div class="projects">
-        <div class="project">
-          <h3>Proyecto 1</h3>
-          <p>
-            Descripción breve del proyecto, las tecnologías usadas y el
-            propósito del mismo.
-          </p>
-          <a href="#">Ver más</a>
-        </div>
-        <div class="project">
-          <h3>Proyecto 2</h3>
-          <p>
-            Descripción breve del proyecto, las tecnologías usadas y el
-            propósito del mismo.
-          </p>
-          <a href="#">Ver más</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Habilidades</h2>
-      <div class="skills">
-        <div class="skill">
-          <h3>HTML & CSS</h3>
-          <p>
-            Experiencia en creación de interfaces responsivas y modernas usando
-            HTML y CSS.
-          </p>
-        </div>
-        <div class="skill">
-          <h3>JavaScript</h3>
-          <p>
-            Conocimiento en desarrollo de funcionalidades interactivas y manejo
-            de datos con JavaScript.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contacto</h2>
-      <p>
-        ¿Quieres trabajar juntos? Puedes contactarme a través de mis redes
-        sociales o enviarme un correo electrónico a
-        <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a>.
-      </p>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 Mi Portafolio</p>
-    </footer>
+    <script src="scripts.js"></script>
   </body>
 </html>
