@@ -179,26 +179,7 @@
     .contact-pill:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
     .contact-pill svg { flex-shrink: 0; }
 
-    .scroll-hint {
-      position: absolute;
-      bottom: 32px;
-      left: 0;
-      font-family: var(--mono);
-      font-size: 0.7rem;
-      color: var(--muted);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      opacity: 0;
-      animation: fade-up 0.7s 1.1s forwards;
-    }
-    .scroll-hint::before {
-      content: '';
-      display: block;
-      width: 1px;
-      height: 32px;
-      background: linear-gradient(to bottom, transparent, var(--muted));
-    }
+
 
     /* ── SECTIONS ── */
     section {
@@ -526,6 +507,9 @@
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           Platzi Profile
         </a>
+      </div>
+
+    </div>
   </div>
 </header>
 
@@ -711,6 +695,7 @@
 <!-- ── FOOTER ── -->
 <footer>
   <div class="wrapper" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; width:100%;">
+    <span>© 2026 Nicolás Fuentealba · Angol, Chile</span>
     <div class="avail-badge">
       <div class="avail-dot"></div>
       Disponible Full-Time
